@@ -1,0 +1,1074 @@
+{
+	"info": {
+		"_postman_id": "2f17f89f-f580-4d6a-a3f0-dc0deff255d4",
+		"name": "food.api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25289929"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry/item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"item"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry/item",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/item",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"item"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:55:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mleko łaciate\",\n    \"barCode\": \"87317129873918\",\n    \"placeDate\": 198723,\n    \"expireDate\": 213,\n    \"quantity\": 12,\n    \"unit\": \"KG\",\n    \"ingredient\": {\n        \"id\": 1,\n        \"name\": \"Mleko\",\n        \"scientificName\": \"mlekus\",\n        \"group\": \"Nabiał\",\n        \"subGroup\": \"Cokolwiek\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:56:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Mleko łaciate\",\n        \"barCode\": \"87317129873918\",\n        \"placeDate\": 198723,\n        \"expireDate\": 213,\n        \"quantity\": 12,\n        \"unit\": \"KG\",\n        \"ingredient\": {\n            \"id\": 1,\n            \"name\": \"Mleko\",\n            \"scientificName\": \"mlekus\",\n            \"group\": \"Nabiał\",\n            \"subGroup\": \"Cokolwiek\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Mleko łaciate\",\n        \"barCode\": \"87317129873918\",\n        \"placeDate\": 198723,\n        \"expireDate\": 213,\n        \"quantity\": 12,\n        \"unit\": \"KG\",\n        \"ingredient\": {\n            \"id\": 1,\n            \"name\": \"Mleko\",\n            \"scientificName\": \"mlekus\",\n            \"group\": \"Nabiał\",\n            \"subGroup\": \"Cokolwiek\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Mleko łaciate\",\n        \"barCode\": \"87317129873918\",\n        \"placeDate\": 198723,\n        \"expireDate\": 213,\n        \"quantity\": 12,\n        \"unit\": \"KG\",\n        \"ingredient\": {\n            \"id\": 1,\n            \"name\": \"Mleko\",\n            \"scientificName\": \"mlekus\",\n            \"group\": \"Nabiał\",\n            \"subGroup\": \"Cokolwiek\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry/items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n},\r\n    {\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry/items",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n},\r\n    {\r\n    \"name\": \"Mleko łaciate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:56:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Mleko łaciate\",\n        \"barCode\": \"87317129873918\",\n        \"placeDate\": 198723,\n        \"expireDate\": 213,\n        \"quantity\": 12,\n        \"unit\": \"KG\",\n        \"ingredient\": {\n            \"id\": 1,\n            \"name\": \"Mleko\",\n            \"scientificName\": \"mlekus\",\n            \"group\": \"Nabiał\",\n            \"subGroup\": \"Cokolwiek\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Mleko łaciate\",\n        \"barCode\": \"87317129873918\",\n        \"placeDate\": 198723,\n        \"expireDate\": 213,\n        \"quantity\": 12,\n        \"unit\": \"KG\",\n        \"ingredient\": {\n            \"id\": 1,\n            \"name\": \"Mleko\",\n            \"scientificName\": \"mlekus\",\n            \"group\": \"Nabiał\",\n            \"subGroup\": \"Cokolwiek\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:56:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mleko łaciate\",\n    \"barCode\": \"87317129873918\",\n    \"placeDate\": 198723,\n    \"expireDate\": 213,\n    \"quantity\": 12,\n    \"unit\": \"KG\",\n    \"ingredient\": {\n        \"id\": 1,\n        \"name\": \"Mleko\",\n        \"scientificName\": \"mlekus\",\n        \"group\": \"Nabiał\",\n        \"subGroup\": \"Cokolwiek\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Mleko ciapate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Mleko ciapate\",\r\n    \"barCode\": \"87317129873918\",\r\n    \"placeDate\": 198723,\r\n    \"expireDate\": 213,\r\n    \"quantity\": 12.0,\r\n    \"unit\": \"KG\",\r\n    \"ingredientId\": 1,\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:57:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mleko ciapate\",\n    \"barCode\": \"87317129873918\",\n    \"placeDate\": 198723,\n    \"expireDate\": 213,\n    \"quantity\": 12,\n    \"unit\": \"KG\",\n    \"ingredient\": {\n        \"id\": 1,\n        \"name\": \"Mleko\",\n        \"scientificName\": \"mlekus\",\n        \"group\": \"Nabiał\",\n        \"subGroup\": \"Cokolwiek\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/data/ingredient/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/data/ingredient/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"data",
+						"ingredient",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/data/ingredient/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/data/ingredient/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"data",
+								"ingredient",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:53:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mleko\",\n    \"scientificName\": \"mlekus\",\n    \"group\": \"Nabiał\",\n    \"subGroup\": \"Cokolwiek\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"Jakub\",\r\n    \"lastname\": \"Nowak\",\r\n    \"email\": \"jakub.nowak@mail.com\",\r\n    \"password\": \"jabłka123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\": \"Jakub\",\r\n    \"lastname\": \"Nowak\",\r\n    \"email\": \"jakub.nowak@mail.com\",\r\n    \"password\": \"jabłka123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:51:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYWt1Yi5ub3dha0BtYWlsLmNvbSIsImlhdCI6MTY3NDEyNTQ2NSwiZXhwIjoxNjc0MTI2OTA1fQ.lHXJk6fb1QT6JzNQlTeu-79uWPHnln6WIN2LhoVVwic\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jakub.nowak@mail.com\",\r\n    \"password\": \"jabłka123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/authenticate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jakub.nowak@mail.com\",\r\n    \"password\": \"jabłka123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:53:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYWt1Yi5ub3dha0BtYWlsLmNvbSIsImlhdCI6MTY3NDEyNTU5MCwiZXhwIjoxNjc0MTI3MDMwfQ.DUG1u3ziy2_Dx_MBy1OF3yOMCGZQ80hUpofW70MlgEc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/data/ingredients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/data/ingredients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"data",
+						"ingredients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/data/ingredients",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/data/ingredients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"data",
+								"ingredients"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:55:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Mleko\",\n        \"scientificName\": \"mlekus\",\n        \"group\": \"Nabiał\",\n        \"subGroup\": \"Cokolwiek\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Jabłko\",\n        \"scientificName\": \"jabłkus\",\n        \"group\": \"Owoce\",\n        \"subGroup\": \"Cokolwiek\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Marchewka\",\n        \"scientificName\": \"marchewkus\",\n        \"group\": \"Warzywa\",\n        \"subGroup\": \"Cokolwiek\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"pantry",
+						"item",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/v1/auth/pantry/item/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/pantry/item/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"pantry",
+								"item",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:59:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mleko ciapate\",\n    \"barCode\": \"87317129873918\",\n    \"placeDate\": 198723,\n    \"expireDate\": 213,\n    \"quantity\": 12,\n    \"unit\": \"KG\",\n    \"ingredient\": {\n        \"id\": 1,\n        \"name\": \"Mleko\",\n        \"scientificName\": \"mlekus\",\n        \"group\": \"Nabiał\",\n        \"subGroup\": \"Cokolwiek\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
