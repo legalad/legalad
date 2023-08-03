@@ -1,5 +1,5 @@
 # About Me:
-Business Informatics Student <br>& Master of Law<br>
+Bachelor of Business Informatics <br>& Master of Law<br>
 
 
 ## Socials:
