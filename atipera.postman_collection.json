@@ -9,7 +9,6 @@
 		{
 			"name": "api_calls_test",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
 			},
 			"request": {
@@ -22,15 +21,6 @@
 						"disabled": true
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/repositories/legala",
 					"protocol": "http",
@@ -55,19 +45,9 @@
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:8080/api/v1/repositories/legalad",
 							"protocol": "http",
@@ -97,7 +77,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 21 Feb 2024 18:44:40 GMT"
+							"value": "Fri, 23 Feb 2024 12:31:41 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -109,29 +89,19 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"name\": \"BankProject\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"f7718ee02e932d97836ea960d69ec9e238ebff5b\"\n            }\n        ]\n    },\n    {\n        \"name\": \"food.api\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"048bd3af77613e0842888cdb35a4ada89d491272\"\n            }\n        ]\n    },\n    {\n        \"name\": \"FoodApp\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"5be2ca3cd2e0e944843352b783e4efc22a8ee467\"\n            }\n        ]\n    },\n    {\n        \"name\": \"hangman\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"476e7ad76bb0b49555ff07708665235111714a99\"\n            }\n        ]\n    },\n    {\n        \"name\": \"legalad\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"e857e837fca24d5327a3feccc8a60bd0edde3ecf\"\n            }\n        ]\n    },\n    {\n        \"name\": \"memo\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"0c7a9871de6668dc8311d36993f1f1504c2e11ac\"\n            }\n        ]\n    },\n    {\n        \"name\": \"PetApp\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"057d4080b75cba6bfbc63661aece9ecd7ccd8a21\"\n            }\n        ]\n    },\n    {\n        \"name\": \"taco-cloud-jpa-spa\",\n        \"login\": \"legalad\",\n        \"branches\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"7add54a494cb5e204bacb02c194418c2f2aab778\"\n            }\n        ]\n    }\n]"
+					"body": "[\n    {\n        \"name\": \"BankProject\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"f7718ee02e932d97836ea960d69ec9e238ebff5b\"\n            }\n        ]\n    },\n    {\n        \"name\": \"food.api\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"048bd3af77613e0842888cdb35a4ada89d491272\"\n            }\n        ]\n    },\n    {\n        \"name\": \"FoodApp\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"5be2ca3cd2e0e944843352b783e4efc22a8ee467\"\n            }\n        ]\n    },\n    {\n        \"name\": \"hangman\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"476e7ad76bb0b49555ff07708665235111714a99\"\n            }\n        ]\n    },\n    {\n        \"name\": \"legalad\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"3b2cbbba7d7996f8771c7eda90c8e81db56780dc\"\n            }\n        ]\n    },\n    {\n        \"name\": \"memo\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"0c7a9871de6668dc8311d36993f1f1504c2e11ac\"\n            }\n        ]\n    },\n    {\n        \"name\": \"PetApp\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"057d4080b75cba6bfbc63661aece9ecd7ccd8a21\"\n            }\n        ]\n    },\n    {\n        \"name\": \"taco-cloud-jpa-spa\",\n        \"login\": \"legalad\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"7add54a494cb5e204bacb02c194418c2f2aab778\"\n            }\n        ]\n    }\n]"
 				},
 				{
-					"name": "user_not_found",
+					"name": "not_found_404",
 					"originalRequest": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:8080/api/v1/repositories/legala",
 							"protocol": "http",
@@ -161,7 +131,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 21 Feb 2024 21:07:11 GMT"
+							"value": "Fri, 23 Feb 2024 12:32:26 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -173,29 +143,19 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": 404,\n    \"message\": \"NOT_FOUND\"\n}"
+					"body": "{\n    \"status\": 404,\n    \"message\": \"User doesn't exist\"\n}"
 				},
 				{
-					"name": "forbidden",
+					"name": "forbidden_403",
 					"originalRequest": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
 								"value": "application/json",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:8080/api/v1/repositories/android",
 							"protocol": "http",
@@ -225,7 +185,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 21 Feb 2024 21:24:30 GMT"
+							"value": "Fri, 23 Feb 2024 12:33:04 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -240,26 +200,16 @@
 					"body": "{\n    \"status\": 403,\n    \"message\": \"FORBIDDEN\"\n}"
 				},
 				{
-					"name": "ok_200",
+					"name": "not_acceptable_406",
 					"originalRequest": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "application/json",
-								"type": "text",
-								"disabled": true
+								"value": "text/xml",
+								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:8080/api/v1/repositories/android",
 							"protocol": "http",
@@ -275,21 +225,21 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
+					"status": "Not Acceptable",
+					"code": 406,
+					"_postman_previewlanguage": "plain",
 					"header": [
 						{
-							"key": "Content-Type",
+							"key": "Accept",
 							"value": "application/json"
 						},
 						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
+							"key": "Content-Length",
+							"value": "0"
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 22 Feb 2024 12:49:18 GMT"
+							"value": "Fri, 23 Feb 2024 12:35:04 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -301,7 +251,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"name\": \".allstar\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"fd3e60afa4a68aa12364d526dba0e87307752664\"\n            }\n        ]\n    },\n    {\n        \"name\": \".github\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"b5dbbbe73e7d62fa79700c9e29f1a137b89aff72\"\n            }\n        ]\n    },\n    {\n        \"name\": \"add-adaptive-layouts\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"end\",\n                \"sha\": \"a417ddef2e70f8d15f003d9d15716da97d41ead0\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"fda70a01d0ec9f1f823553e7387284a2c4786026\"\n            }\n        ]\n    },\n    {\n        \"name\": \"add-play-integrity-codelab\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"595ac130f12b01bbafcb88a4c4fbce06bccaa823\"\n            }\n        ]\n    },\n    {\n        \"name\": \"adpf-game-adaptability-codelab\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"codelab/end\",\n                \"sha\": \"9934c4678d8bad605adfdfd2897f702f4a1bb864\"\n            },\n            {\n                \"name\": \"codelab/start\",\n                \"sha\": \"46ac6850818d7bfc7dfd7135109724eab439edfa\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"46ac6850818d7bfc7dfd7135109724eab439edfa\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android-dev-challenge-compose\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"64328e8cdaa085db5de9699b3ff645aea79f1829\"\n            },\n            {\n                \"name\": \"solution\",\n                \"sha\": \"90ce5890276fa2d684b31f54a085a6b893032218\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android-health-connect-codelab\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"6d2078036ace828bf501e17be6158bf1ef4fadd3\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android-ktx\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"gh-pages\",\n                \"sha\": \"0f2a6f20a8c106c034f10df407f9b43b277e3ca7\"\n            },\n            {\n                \"name\": \"jakew/agp/2018-02-15\",\n                \"sha\": \"0ffba5d86c2151531308227020bfb75cac61b4ae\"\n            },\n            {\n                \"name\": \"jakew/direct/2018-04-18\",\n                \"sha\": \"aeb25bcd90d09ad3ad1b59294f327a07eb83c24c\"\n            },\n            {\n                \"name\": \"jakew/three/2018-04-02\",\n                \"sha\": \"d3b0239251de1fd97645056164d809618d22dd81\"\n            },\n            {\n                \"name\": \"jaredsburrows-jb/base64-extensions\",\n                \"sha\": \"2ea0753cbe037a7dd5deb463205748627cb85da6\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"7eb394dc7d489370de1e32bb91755a24bbd75627\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android-studio-poet\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"f820e9cc0e5d7db4de9a7e31b818277143546f73\"\n            },\n            {\n                \"name\": \"sharing-resources-between-android-modules\",\n                \"sha\": \"5ed4861a7765cd1c24ee876597c42e9d1fc95583\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android-test\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"38AB36A64FF49FC5DC0CEEB0569F7F8F\",\n                \"sha\": \"5d04f464e098c305fb22a5252be319010ff596ea\"\n            },\n            {\n                \"name\": \"F74BE8B7798D6BC201F3D089D54A386E\",\n                \"sha\": \"726e18f54b9ba0047649cca6ecb0db868a29d6cb\"\n            },\n            {\n                \"name\": \"FB032EA67D58D564A0C798A68E762D7B\",\n                \"sha\": \"340a706305052d30071c6c0044e62e0488c49cf8\"\n            },\n            {\n                \"name\": \"agpver\",\n                \"sha\": \"874a95681b1f9846fe0085f7bd612b9e7cf2450b\"\n            },\n            {\n                \"name\": \"android30\",\n                \"sha\": \"f0ea19efb923f12bce4c26aa533bae847f396502\"\n            },\n            {\n                \"name\": \"androidXForBazel\",\n                \"sha\": \"bb72e15daae316defa9de82cd06f517d1be41095\"\n            },\n            {\n                \"name\": \"androidx-test-1.1\",\n                \"sha\": \"07237c39dd498795962f6b44135647f642a5e359\"\n            },\n            {\n                \"name\": \"androidx-test-1.2.x\",\n                \"sha\": \"3a938108ae453e289995dad0b045bde0425a8887\"\n            },\n            {\n                \"name\": \"annotation160\",\n                \"sha\": \"10814610d1227947861d8bbb66f29d382dcb0ed6\"\n            },\n            {\n                \"name\": \"axt_1.3.0_release_branch\",\n                \"sha\": \"33d8470274b0a8210de657b04fb937eabab7c25e\"\n            },\n            {\n                \"name\": \"axt_1.4.0_release_branch\",\n                \"sha\": \"f318a43a07cc77ef19f3f271b78d825574c520e5\"\n            },\n            {\n                \"name\": \"axt_01_24_2024_release_branch_in_progress\",\n                \"sha\": \"d5bc91229f33d1bc96c9f2ab2bf17759b318ad74\"\n            },\n            {\n                \"name\": \"axt_01_24_2024_release_branch\",\n                \"sha\": \"2516632e2571887689a1c260a0783d8cf29fba67\"\n            },\n            {\n                \"name\": \"axt_03_13_2023_2_release_branch\",\n                \"sha\": \"4da087e5f42412a1cb311f684484ab254642c2c4\"\n            },\n            {\n                \"name\": \"axt_06_26_2023_release_branch\",\n                \"sha\": \"e40ec331dae1470dc9bbf92404c6dcacb30b5f42\"\n            },\n            {\n                \"name\": \"axt_09_13_2023_release_branch\",\n                \"sha\": \"d2301d50979d9e57d5b45ee5c99b5771c4c94d04\"\n            },\n            {\n                \"name\": \"axt_11_29_2023_release_branch\",\n                \"sha\": \"e174e807c92167bf2326aa7af0d58a47cd17dd7d\"\n            },\n            {\n                \"name\": \"axt_12_05_2023_release_branch_in_progress\",\n                \"sha\": \"583f6ec126bae275208aee7e87f68b20945ed2a0\"\n            },\n            {\n                \"name\": \"axt_12_05_2023_release_branch\",\n                \"sha\": \"d56e17e744fc861a276987e75a4f4b4f57f5382a\"\n            },\n            {\n                \"name\": \"axt_2024_01_26_release_branch_in_progress\",\n                \"sha\": \"8fd374ff224654a234576e34f1f524b52cd27569\"\n            },\n            {\n                \"name\": \"axt_2024_01_26_release_branch\",\n                \"sha\": \"9d38e00ab1bf11cc3e174e8a551f2b0de607e18a\"\n            },\n            {\n                \"name\": \"bazel6\",\n                \"sha\": \"4001f8038a74d03419cce5b1c31b13296c8e880d\"\n            },\n            {\n                \"name\": \"bazel62\",\n                \"sha\": \"3f636e4c715485ac11d303125c354797aaf25265\"\n            },\n            {\n                \"name\": \"bazel63\",\n                \"sha\": \"94802d82267e597055fce6a542dc4d9f66bce6a8\"\n            },\n            {\n                \"name\": \"bazelcache\",\n                \"sha\": \"55639da87699dc0b4feb5e1caea51babbef9db77\"\n            },\n            {\n                \"name\": \"bazelproject\",\n                \"sha\": \"1223a61f071d47b5605ef33a20e3fc6db1165a37\"\n            },\n            {\n                \"name\": \"bazelrelease\",\n                \"sha\": \"758eb7fb0ca5f4115d47e950534b0ab0a99dd30d\"\n            },\n            {\n                \"name\": \"brettchabot-patch-1\",\n                \"sha\": \"21dba520b672baa06900841a7806d749f6cb03c8\"\n            },\n            {\n                \"name\": \"brettchabot-patch-2\",\n                \"sha\": \"d525760dcb0c2cf3901de652805274349ec92158\"\n            },\n            {\n                \"name\": \"brettchabot-patch-3\",\n                \"sha\": \"24c4b1e31ea868b28d2861daa38f588332d47523\"\n            }\n        ]\n    },\n    {\n        \"name\": \"android.github.io\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"e6f43fbe6c548418679eb0fea070c40b96978949\"\n            },\n            {\n                \"name\": \"renovate/configure\",\n                \"sha\": \"e31b0c87abfa8cd9d4e918431d6f90bbd8a46c7a\"\n            }\n        ]\n    },\n    {\n        \"name\": \"animation-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"1f1c48b0535695779e070e54a326f67ec3014756\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"1f1c48b0535695779e070e54a326f67ec3014756\"\n            },\n            {\n                \"name\": \"update_motion_compose_deps\",\n                \"sha\": \"06b64eb2ff8416ee4d5a80c86857726594887ce5\"\n            },\n            {\n                \"name\": \"yaraki/motion-predictive\",\n                \"sha\": \"77e4183597df61e7f7995bcdac902ab42f9e3444\"\n            }\n        ]\n    },\n    {\n        \"name\": \"app-actions-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"fea0f48a6d7f1c43d47c3ad14bfd11ace4b5629c\"\n            }\n        ]\n    },\n    {\n        \"name\": \"app-bundle-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"add-asset-only-script\",\n                \"sha\": \"b621b187eb1da336334cbc3cc3172288c99b4be1\"\n            },\n            {\n                \"name\": \"codingjeremy-patch-1\",\n                \"sha\": \"f9b65aab66dd1a709c82da9cd90dfbd2cd52ae47\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"631b533c0a18f7dd1efef5cefaa8f7aa7c594656\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"631b533c0a18f7dd1efef5cefaa8f7aa7c594656\"\n            },\n            {\n                \"name\": \"playcorektx-changes\",\n                \"sha\": \"4f514be3921dfb927279e91649d2dad16778c3f2\"\n            }\n        ]\n    },\n    {\n        \"name\": \"architecture-components-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"android-s\",\n                \"sha\": \"cda2363e351b891be4a9c3d8f490be9d572218ce\"\n            },\n            {\n                \"name\": \"bw/foregroundServices\",\n                \"sha\": \"d70aea312cd68271428f369a27e9ff296a98dc96\"\n            },\n            {\n                \"name\": \"bw/upgradeWM\",\n                \"sha\": \"fb21ac05328efc663ea856bbf5cb6e3f23a4917e\"\n            },\n            {\n                \"name\": \"codingjeremy-patch-1\",\n                \"sha\": \"1160efba95f59b770e98d8a4c29440f345321c08\"\n            },\n            {\n                \"name\": \"dlam/fix-github\",\n                \"sha\": \"24e9bc23e299caccab36b628f0e0779e02491459\"\n            },\n            {\n                \"name\": \"dlam/fix-paging-test\",\n                \"sha\": \"4a7c17319fdd5eacfe7f0572aa5a9c48ade3b950\"\n            },\n            {\n                \"name\": \"fix_browser_test\",\n                \"sha\": \"4e3451545574d354c9fe39330be625ae7f22f7d8\"\n            },\n            {\n                \"name\": \"fix_circleci\",\n                \"sha\": \"22bcfb4ddcebfb38230d2acc881c52397e8c5d6c\"\n            },\n            {\n                \"name\": \"fix-empty-list\",\n                \"sha\": \"f2ef4c7404be999b9b63328ac5d91f34ce5ff921\"\n            },\n            {\n                \"name\": \"gha_fixes\",\n                \"sha\": \"6ee7a18c2a52a0f407cb605dae0247fcdd71f65b\"\n            },\n            {\n                \"name\": \"gha\",\n                \"sha\": \"15798e655cb3216c56011443a649226df9f5c87b\"\n            },\n            {\n                \"name\": \"githubbrowser-coroutines\",\n                \"sha\": \"296c08826e35450080328ac2c3870d198627c4c2\"\n            },\n            {\n                \"name\": \"githubbrowser-coroutines-dev\",\n                \"sha\": \"5964816604a84e53ca6b849efdad9d1cbcda1c01\"\n            },\n            {\n                \"name\": \"jcenter-removal\",\n                \"sha\": \"df621f94d1483d205cb7ad0cb9fd34bf17bd3dfa\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"e849ce3004ccd1132a121cf513bbcb7996d95c30\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"e849ce3004ccd1132a121cf513bbcb7996d95c30\"\n            },\n            {\n                \"name\": \"move-repo-to-buildLiveData\",\n                \"sha\": \"42c78731f96d4e3f6a39442d5d2e70f0ded5ecf7\"\n            },\n            {\n                \"name\": \"move-repo-to-buildLiveData-3\",\n                \"sha\": \"eea5177464c3d9f70faa0b3c65fb4689d52e4b99\"\n            },\n            {\n                \"name\": \"move-repo-to-buildLiveData-4\",\n                \"sha\": \"adfcfbf291a8ce8827b82eafaf960c941810f965\"\n            },\n            {\n                \"name\": \"move-to-new-coroutines-test-artifact\",\n                \"sha\": \"82587f8ef19b81cbabe8a18e01af3ab804fc69a0\"\n            },\n            {\n                \"name\": \"paging2\",\n                \"sha\": \"6a961faad1b2e5a4ee853c1d343747d0a34dfa0e\"\n            },\n            {\n                \"name\": \"paging-add-more-tests\",\n                \"sha\": \"418666f8da61d80f8f42937f4a51db0f9a41680e\"\n            },\n            {\n                \"name\": \"paging-test-coroutine-1.6\",\n                \"sha\": \"c4dfa15be97d933914e9b52ce69d8753b0353707\"\n            },\n            {\n                \"name\": \"renovate/configure\",\n                \"sha\": \"ed08c5fe7c0be2a769a38c9d64ecfcaff410c6b8\"\n            },\n            {\n                \"name\": \"update-sample-index\",\n                \"sha\": \"a9561f96e1a573e81b5a848bd8adedc95041dc8c\"\n            },\n            {\n                \"name\": \"upgrade-to-compose\",\n                \"sha\": \"b7ec9628125a380c138fe688b6274f1de39bee9d\"\n            },\n            {\n                \"name\": \"yigit/ksp-sample\",\n                \"sha\": \"b7d777fc97baccf718b7a65b6b1cd08e1d7a6c99\"\n            }\n        ]\n    },\n    {\n        \"name\": \"architecture-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"ci_gmd\",\n                \"sha\": \"193da588218afe84b032b48fcea7c32b2990f7da\"\n            },\n            {\n                \"name\": \"coroutine-experiments\",\n                \"sha\": \"2dd00cfb8c98c74bf660d1ec9a79be78ea78042a\"\n            },\n            {\n                \"name\": \"data-codelab-final\",\n                \"sha\": \"f0d43aa82d5b1be59dba4cc8e8d7dcfad5de2d87\"\n            },\n            {\n                \"name\": \"data-codelab-start\",\n                \"sha\": \"9a95a7a458a81c53fbbc8cf7847afc5580565313\"\n            },\n            {\n                \"name\": \"dev-compose\",\n                \"sha\": \"e1cad442e5ea62ff3a322e544b5665b411ce67b9\"\n            },\n            {\n                \"name\": \"dev-dagger\",\n                \"sha\": \"8b028e3dadc8a0faa69d5e9f064befb9abb4dae7\"\n            },\n            {\n                \"name\": \"dev-hilt\",\n                \"sha\": \"2291fc6d2e17a37be584a89b80ee73c207c804c3\"\n            },\n            {\n                \"name\": \"docs/update-readme\",\n                \"sha\": \"25475f1003043adefdd3004ec69d6cc1713313ee\"\n            },\n            {\n                \"name\": \"hilt\",\n                \"sha\": \"2291fc6d2e17a37be584a89b80ee73c207c804c3\"\n            },\n            {\n                \"name\": \"ja/new-readme-goodbye-blueprints\",\n                \"sha\": \"9d7e619f1af0c348d7b3655789fbfa0ccd31c73a\"\n            },\n            {\n                \"name\": \"livedata\",\n                \"sha\": \"b9860371bbe88df2a1526d278d4f0e93928968d5\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"03d9af0b6a1ab82e450ca7c45f973a119412a9ab\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"a5c4a6a720c5a36728dc9a62c62b86621cac4cce\"\n            },\n            {\n                \"name\": \"multimodule\",\n                \"sha\": \"24708979df8412063defc7ec2a60a82a0efc820f\"\n            },\n            {\n                \"name\": \"mv/effects\",\n                \"sha\": \"07c33fd79d9bcd011aff113af0963afd3b930cca\"\n            },\n            {\n                \"name\": \"mv/produceUiState\",\n                \"sha\": \"0258bba34514ef10589b2daf2e031bfeaaa3a814\"\n            },\n            {\n                \"name\": \"renovate/all\",\n                \"sha\": \"e621b723a5ecafa79276441e00d76cb4888d9c44\"\n            },\n            {\n                \"name\": \"renovate/kotlin\",\n                \"sha\": \"be74645d82173d1087630210365d12dc79382318\"\n            },\n            {\n                \"name\": \"service-locator\",\n                \"sha\": \"9575ea50e6683f8574b18eea60ff856a6f7e2c1c\"\n            },\n            {\n                \"name\": \"tj/version-catalogs\",\n                \"sha\": \"25bba4c25353fb02682358e4555757ace5b63dcf\"\n            },\n            {\n                \"name\": \"tunjid-base-branch\",\n                \"sha\": \"3051b53dc1c2150b20c6d7e5342dacd41c628711\"\n            },\n            {\n                \"name\": \"views\",\n                \"sha\": \"bc79c50b349b8905af5182c72eceefac9d28fb16\"\n            },\n            {\n                \"name\": \"views-hilt\",\n                \"sha\": \"2291fc6d2e17a37be584a89b80ee73c207c804c3\"\n            }\n        ]\n    },\n    {\n        \"name\": \"architecture-templates\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"base\",\n                \"sha\": \"b9527620cfa74688fd896c12be45170c8b3f7085\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"5130d19a9c0b51ee434877e1852680bcbe06e4ea\"\n            },\n            {\n                \"name\": \"multimodule\",\n                \"sha\": \"90c5a73e4dd5e65b686d40ee3d921830f3b22834\"\n            },\n            {\n                \"name\": \"renovate/base-all\",\n                \"sha\": \"97713c801e199a92fa6cc9aa6ed12ea50b6d792b\"\n            },\n            {\n                \"name\": \"renovate/base-kotlin\",\n                \"sha\": \"69513419ba0615e578e5c27e3b018af3a08754f9\"\n            },\n            {\n                \"name\": \"renovate/multimodule-all\",\n                \"sha\": \"e4734f5ab302e1d0b9d8998a979f08d8b400549b\"\n            },\n            {\n                \"name\": \"renovate/multimodule-kotlin\",\n                \"sha\": \"31f3c1d216dd22b505cf5befd16a1daefd1b6929\"\n            }\n        ]\n    },\n    {\n        \"name\": \"camera-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"autofit-surfaceview-fix\",\n                \"sha\": \"066743646b6b8148cdf4518c3d2cdc0107df5efd\"\n            },\n            {\n                \"name\": \"develop\",\n                \"sha\": \"8a4b6cfe3dfeb71b1a046c26ead07ebe2dcd3fd1\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"96cbc7d8014d72470c4b70ca76adfdc332d60123\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"4a37be236a0ead6ab9b86621c91a2b6a5939e32e\"\n            },\n            {\n                \"name\": \"qr-code-screenshot\",\n                \"sha\": \"9e05b048c18a4a0a5bcce4de3cb8478b4ca5ae11\"\n            },\n            {\n                \"name\": \"update-gradle-camx\",\n                \"sha\": \"080f20bad4c1ee641ec995e6bb0325715fc040c1\"\n            }\n        ]\n    },\n    {\n        \"name\": \"car-codelabs\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"b66d70a6b29325be13010f741955c7e96aed1d5b\"\n            }\n        ]\n    },\n    {\n        \"name\": \"car-samples\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"carlib\",\n                \"sha\": \"16131140d7b5ba0c996bc7d6e822874032368fa5\"\n            },\n            {\n                \"name\": \"distraction\",\n                \"sha\": \"674ca75ed48f5ea5b648fabc29e6fffc6abaf5ad\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"03440d5e974a060d0216b5e02a7fe3c46b7b9469\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"03440d5e974a060d0216b5e02a7fe3c46b7b9469\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-activity_transitionapi\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"e9a92cd0146ec4302b766da4c06bcd49d149a8e4\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-accessibility\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"accessible\",\n                \"sha\": \"38c689808a25fb023da00ee99e09bd0f6a7b25fe\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"0e9851180ab8384a2aabf0301b3f9be3de0e9ff9\"\n            },\n            {\n                \"name\": \"ts/remove_attributes\",\n                \"sha\": \"44d336c867c101323c04effbbac2e92c28702afd\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-backup\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"f7fc492127f5589786674fbddf502e7be8b99b05\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-camera2-preview\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"main\",\n                \"sha\": \"b61062b27cef571a2aae13f6d9e667e2853d9165\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-compose\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"end\",\n                \"sha\": \"7ab3eee204f7d203821b58f0cc83cff033f2fa13\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"26aa3a50f98f310a9355880d170d4afaf68e4141\"\n            },\n            {\n                \"name\": \"renovate/end-all\",\n                \"sha\": \"2eabf02d7bcd74d8c9efed1b8cac707ffc213702\"\n            },\n            {\n                \"name\": \"renovate/end-kotlin-dependencies\",\n                \"sha\": \"b0a69a6239d626f7682dc0834a6b6d0c74c33a24\"\n            },\n            {\n                \"name\": \"renovate/main-all\",\n                \"sha\": \"9bc0fc57d21da2bde95bf2c72eddf0f6c3df7364\"\n            },\n            {\n                \"name\": \"renovate/main-kotlin-dependencies\",\n                \"sha\": \"610fb2dd3e2888c506720d0055ed41653af5cbb4\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-dagger\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"1_registration_main\",\n                \"sha\": \"e2c08359324cadc28bb1e208e0b4d07e1af5a0d9\"\n            },\n            {\n                \"name\": \"2_subcomponents\",\n                \"sha\": \"62b53ac324ec74a54558382780e81a32663afdb8\"\n            },\n            {\n                \"name\": \"3_dagger_app\",\n                \"sha\": \"612fd9724016b67304d822591fba44422ad380f6\"\n            },\n            {\n                \"name\": \"main\",\n                \"sha\": \"fcc4fb89ce8b80072b226ed0b6bc48d35832005c\"\n            },\n            {\n                \"name\": \"solution\",\n                \"sha\": \"c2cabd1a58efb3302b58db512d8b734ad9dced4d\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-dagger-to-hilt\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"interop\",\n                \"sha\": \"f43a75b2dd6223b016875fa21ed73a0bd7b47b39\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"f6cbebeccec3188d4becffaf28fd24284ac77ad7\"\n            },\n            {\n                \"name\": \"solution\",\n                \"sha\": \"85f76bdf838f72bfa6fba63cfeea9b84918cedfb\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-databinding\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"GithubActions\",\n                \"sha\": \"fd56f9245ad7bf69fe8bc75b97e949b90d4fe2db\"\n            },\n            {\n                \"name\": \"androidxLiveData\",\n                \"sha\": \"c352e015871baabac1ef007fa64aa82b4a839777\"\n            },\n            {\n                \"name\": \"master\",\n                \"sha\": \"07889ac088106bbc91a339001abaa873481133b5\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-datastore\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"387043a665d401ee6a95b843e67b102de0dd2242\"\n            },\n            {\n                \"name\": \"preferences_datastore\",\n                \"sha\": \"ea09e926000d24dcacbde7befd311886b81d9473\"\n            },\n            {\n                \"name\": \"proto_datastore\",\n                \"sha\": \"56c38f8f805409eec30eec5ffc7fd2532c5b9443\"\n            }\n        ]\n    },\n    {\n        \"name\": \"codelab-android-direct-share\",\n        \"login\": \"android\",\n        \"branchResponses\": [\n            {\n                \"name\": \"master\",\n                \"sha\": \"97c2845f8980df942314270f9c4f2e536bd749bb\"\n            }\n        ]\n    }\n]"
+					"body": null
 				}
 			]
 		},
